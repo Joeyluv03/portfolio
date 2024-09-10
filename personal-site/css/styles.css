@@ -1,0 +1,115 @@
+/* COLOR PALETTE
+LILAC #AD97BF
+OFF-WHITE #F6F6F6
+VIOLET #BC8CC2
+DARK PURPLE #271F30
+RAISIN BLACK #272727
+*/
+
+/* GLOBAL STYLES
+-------------------------------------- */
+
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #F6F6F6;
+    margin: 0;
+
+}
+
+
+/* LINKS STYLES */
+a {
+    color: #271F30;
+
+}
+a:hover {
+    color: #BC8CC2;
+    text-decoration: none;
+
+}
+
+footer a{
+    color: #BC8CC2;
+}
+
+footer a:hover{
+    color: #F6F6F6;
+    text-decoration: none;
+
+}
+
+.btn {
+    background: #AD97BF;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+
+
+
+/* HOME
+-------------------------------------- */
+.home {
+    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.9);
+}
+
+
+/* PORTFOLIO
+-------------------------------------- */
+.portfolio header::before {
+    background: url(../images/bg-home-office-studio.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
+ /* Profile
+-------------------------------------- */
+
+/* Projects
+-------------------------------------- */
+
+/* FOOTER
+-------------------------------------- */
+footer {
+    background: #271F30;
+    color: #BC8CC2;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block; 
+}
+
+.socials img{
+    width: 32px; 
+}
+
