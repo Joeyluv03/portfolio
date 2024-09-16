@@ -69,11 +69,17 @@ footer a:hover{
 .home {
     background: url(../images/bg-home-office-studio.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-bg{
     background: rgb(255 255 255 / 0.9);
+    padding: 30px;
 }
 
 
@@ -86,18 +92,50 @@ footer a:hover{
     display: block;
     height: 375px;
 }
+.portfolio-section {
+    margin-bottom: 50px;
+}
+.portfolio-section h2 {
+    border-bottom: 2px dashed #AD97BF;
+}
+.download-link{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+
+}
 
  /* Profile
 -------------------------------------- */
 
 /* Projects
 -------------------------------------- */
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Works ------------------------------ */
+
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
 
 /* FOOTER
 -------------------------------------- */
 footer {
     background: #271F30;
     color: #BC8CC2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .socials {
@@ -107,9 +145,14 @@ footer {
 
 .socials li {
     display: inline-block; 
+    margin-left: 10px;
 }
 
 .socials img{
     width: 32px; 
+}
+
+.socials img:hover {
+    opacity: 0.5;
 }
 
