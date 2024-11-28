@@ -30,13 +30,14 @@ body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
-
+    color: #BC8CC2;
 }
 
 h1, h2, h3 {
-    font-family: "Handjet", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     margin: 0;
+    color: #433553;
 }
 h1 {
     font-size: 7rem;
