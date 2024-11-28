@@ -26,16 +26,18 @@ html, body {
 }
 
 body {
-    background: #F6F6F6;
+    background: #f6f6f6;
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
+    color: #9873b6;
 
 }
 
 h1, h2, h3 {
-    font-family: "Handjet", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
+    color: #463957;
     margin: 0;
 }
 h1 {
@@ -107,7 +109,7 @@ footer a:hover{
     flex: 1 0 auto;
 }
 .content-bg {
-    background: rgb(255 255 255 / 0.9);
+    background: rgba(252, 235, 255, 0.9);
     padding: 30px;
 }
 @media screen and (max-width:650px){
