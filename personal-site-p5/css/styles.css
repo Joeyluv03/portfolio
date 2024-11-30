@@ -29,10 +29,17 @@ body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
-    color: #9873b6;
+    color: #46295d;
 
 }
-
+canvas {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 h1, h2, h3 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -108,7 +115,7 @@ footer a:hover{
     flex: 1 0 auto;
 }
 .content-bg {
-    background: rgba(252, 235, 255, 0.9);
+    background: rgba(252, 235, 255, .5);
     padding: 30px;
 }
 @media screen and (max-width:650px){
