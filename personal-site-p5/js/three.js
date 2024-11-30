@@ -5,7 +5,7 @@ import * as THREE from 'three';
 
 
 // Import add-ons
-import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js';
+//import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://unpkg.com/three@0.162.0/examples/jsm/loaders/GLTFLoader.js'; // to load 3d models
 
 
@@ -29,7 +29,7 @@ function init() {
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    document.querySelector("#three-container").appendChild(renderer.domElement);
 
 
 
@@ -57,7 +57,7 @@ function init() {
 
     // ~~~~~~ Initiate add-ons ~~~~~~
 
-    const controls = new OrbitControls(camera, renderer.domElement);
+    //const controls = new OrbitControls(camera, renderer.domElement);
     const loader = new GLTFLoader(); // to load 3d models
 
 
@@ -93,6 +93,11 @@ const clock = new THREE.Clock();
 function animate() {
     requestAnimationFrame(animate); // start loop by with frame update
 
+    //Scroll animation
+    let scrollY = window.scrollY;
+    camera.position.y = scrollY * .001;
+
+    //3d Model animation
     if (lotus) { // check to see if model loaded first
 
         // animation mixer update

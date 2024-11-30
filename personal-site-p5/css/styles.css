@@ -32,9 +32,7 @@ body {
     color: #46295d;
 
 }
-canvas {
-    width: 100vw;
-    height: 100vh;
+#three-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -104,7 +102,7 @@ footer a:hover{
 /* HOME
 -------------------------------------- */
 .home {
-    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
