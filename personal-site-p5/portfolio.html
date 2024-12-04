@@ -1,89 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Joey Montiel | Portfolio</title>
-    <!-- font 1 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0, 300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-     <!-- font 2 -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&    family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  </head>
-  <body class="portfolio">
-    <nav>
-      <ul class="sidebar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Statement</a></li>
-        <li><a href="#">CV</a></li>
-      </ul>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Statement</a></li>
-        <li><a href="#">CV</a></li>
-      </ul>
-    </nav>
-    <!-- // btn download // disable -->
-    <!-- <a class="btn download-link" href="#">Download PDF</a> -->
-    <!-- //  INTRO  // -->
-    <header>
-      <!-- Start content edits below this line. -->
-      <div class="content-wrapper">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joey Montiel | Portfolio</title>
+  <!-- font 1 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0, 300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- font 2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&    family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="portfolio">
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#bc8cc2"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Statement</a></li>
+      <li><a href="#">CV</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="#">Projects</a></li>
+      <li class="hideOnMobile"><a href="#">Statement</a></li>
+      <li class="hideOnMobile"><a href="#">CV</a></li>
+      <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            viewBox="0 -960 960 960" width="24px" fill="#bc8cc2">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a></li>
+    </ul>
+  </nav>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex';
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none';
+    }
+  </script>
+
+  <!-- // btn download // disable -->
+  <!-- <a class="btn download-link" href="#">Download PDF</a> -->
+  <!-- //  INTRO  // -->
+  <header>
+    <!-- Start content edits below this line. -->
+    <div class="content-wrapper">
       <h1>Joey Montiel</h1>
       <h2>Multimedia Artist</h2>
-      </div>
+    </div>
+
+    <!-- End content edits here. -->
+  </header>
+
+  <main class="content-wrapper">
+    <!-- //  PROFILE  // -->
+    <section class="portfolio-section">
+      <!-- Start content edits below this line. -->
+      <h2>Profile</h2>
+      <p>Add your resume summary/profile here. Add more paragraphs or links as needed.</p>
+      <a href="index.html">Back to homepage</a>
 
       <!-- End content edits here. -->
-    </header>
+    </section>
 
-    <main class="content-wrapper">
-      <!-- //  PROFILE  // -->
-      <section class="portfolio-section">
-        <!-- Start content edits below this line. -->
-        <h2>Profile</h2>
-        <p>Add your resume summary/profile here. Add more paragraphs or links as needed.</p>
-        <a href="index.html">Back to homepage</a>
+    <!-- //  PROJECTS  // -->
+    <section class="portfolio-section">
+      <!-- Start content edits below this line. -->
+      <h2>Projects</h2>
+      <p>Optional paragraph for the Projects summary. Delete if not being used.</p>
 
-        <!-- End content edits here. -->
-      </section>
-
-      <!-- //  PROJECTS  // -->
-      <section class="portfolio-section">
-        <!-- Start content edits below this line. -->
-        <h2>Projects</h2>
-        <p>Optional paragraph for the Projects summary. Delete if not being used.</p>
-
-        <!-- To add more items, copy this whole <section></section> block-->
-        <div class="project-wrapper">
+      <!-- To add more items, copy this whole <section></section> block-->
+      <div class="project-wrapper">
         <section class="project-item">
-          <img src="images/project-biz-cards-500px.jpg" srcset="images/project-biz-cards-1000px.jpg 2x" alt="Project Biz Cards" width="" height="">
+          <img src="images/project-biz-cards-500px.jpg" srcset="images/project-biz-cards-1000px.jpg 2x"
+            alt="Project Biz Cards" width="" height="">
           <h3>Project Name</h3>
           <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
           <!-- link to project -->
           <a class="btn" href="#" target="_blank">Link</a>
           <!-- additional links, e.g. newsletter -->
-          <a class="btn"href="#" target="_blank">Another link</a>
+          <a class="btn" href="#" target="_blank">Another link</a>
         </section>
       </div>
-        
-        <!-- End content edits here. -->
-      </section>
 
-      <!-- //  WORK EXPERIENCE  // -->
-      <section class="portfolio-section">
-        <!-- Start content edits below this line.  -->
-        <h2>Work Experience</h2>
-        <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
+      <!-- End content edits here. -->
+    </section>
 
-        <!-- To add more items, copy this whole <section></section> block -->
-        <section class="work-item">
-          <div class="work-details">
+    <!-- //  WORK EXPERIENCE  // -->
+    <section class="portfolio-section">
+      <!-- Start content edits below this line.  -->
+      <h2>Work Experience</h2>
+      <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
+
+      <!-- To add more items, copy this whole <section></section> block -->
+      <section class="work-item">
+        <div class="work-details">
           <h3>Job title</h3>
           <p>Company Name</p>
           <p>Date at job</p>
@@ -99,52 +121,53 @@
             <li>Responsible for...</li>
           </ul>
         </div>
-        </section>
-
-        <!-- End content edits here. -->
       </section>
 
-      <!-- //  EDUCATION & CERTIFICATIONS  // -->
-      <!-- <section class="portfolio-section"> -->
-        <!-- Start content edits below this line.  -->
-        <!-- <h2>Education</h2> -->
+      <!-- End content edits here. -->
+    </section>
 
-        <!-- To add more items, copy this whole <section></section> block -->
-        <!-- <section>
+    <!-- //  EDUCATION & CERTIFICATIONS  // -->
+    <!-- <section class="portfolio-section"> -->
+    <!-- Start content edits below this line.  -->
+    <!-- <h2>Education</h2> -->
+
+    <!-- To add more items, copy this whole <section></section> block -->
+    <!-- <section>
           <h3>School name - City</h3>
           <p>Designation received or program name, year attended</p>
           <p>Summary or accomplishments.</p>
         </section> -->
 
-        <!-- End content edits here. -->
-      <!-- </section> -->
-    </main>
+    <!-- End content edits here. -->
+    <!-- </section> -->
+  </main>
 
-    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
-      <!-- Start content edits below this line. -->
-      <p>© 2023 by Joey Montiel | <a href="mailto:email@example.com">Joeyluv2003@gmail.com</a></p>
+  <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+  <footer>
+    <!-- Start content edits below this line. -->
+    <p>© 2023 by Joey Montiel | <a href="mailto:email@example.com">Joeyluv2003@gmail.com</a></p>
 
-      <!-- Add or remove any networks. -->
-      <ul class="socials">
-        <li>
-          <a href="#" target="_blank">Twitter</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">Facebook</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">YouTube</a>
-        </li>
-        <li>
-          <a href="#" target="_blank"><img src="images/icon-logo-instagram.png" alt="Instagram"></a>
-        </li>
-      </ul>
-      
-      <!-- End content edits here. -->
-    </footer>
-  </body>
+    <!-- Add or remove any networks. -->
+    <ul class="socials">
+      <li>
+        <a href="#" target="_blank">Twitter</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">LinkedIn</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">Facebook</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">YouTube</a>
+      </li>
+      <li>
+        <a href="#" target="_blank"><img src="images/icon-logo-instagram.png" alt="Instagram"></a>
+      </li>
+    </ul>
+
+    <!-- End content edits here. -->
+  </footer>
+</body>
+
 </html>
