@@ -138,10 +138,12 @@ a:hover {
 
 footer a{
     color: #BC8CC2;
+    text-decoration: none;
 }
 
 footer a:hover{
-    color: #F6F6F6;
+    background-color: #463957;
+    /* color: #F6F6F6; */
     text-decoration: none;
 
 }
@@ -399,6 +401,8 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
 }
 
 .socials {
@@ -408,6 +412,7 @@ footer {
 
 .socials li {
     display: inline-block; 
+    margin-top: 5px;
     margin-left: 10px;
 }
 
@@ -429,7 +434,7 @@ footer {
 @media screen and (max-width:859px){
     footer {
         text-align: center;
-        padding: 10px;
+        padding: 15px;
     }
 }
 
