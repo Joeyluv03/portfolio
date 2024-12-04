@@ -16,6 +16,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; /* --- set default to 10px --- */
     line-height: 1.4;
+    background-color: #AD97BF;
   }
 *{
     margin: 0;
@@ -104,6 +105,21 @@ canvas {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -1;
+}
+
+body, html, #Particles {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+#Particles {
+    overflow: hidden;
+}
+#Particles canvas {
+    display: hidden;
+    position: fixed;
+    top: 0;
     z-index: -1;
 }
 
