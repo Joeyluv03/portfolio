@@ -56,7 +56,7 @@ function init() {
     // const materialTorus = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 
     // To add texture
-    const textureTorus = new THREE.TextureLoader().load('textures/animalPrint-crop-1024.png');
+    //const textureTorus = new THREE.TextureLoader().load('textures/animalPrint-crop-1024.png');
 
     const material = new THREE.PointsMaterial({
         size: 0.05
