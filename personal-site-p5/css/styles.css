@@ -76,7 +76,7 @@ nav li:first-child {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: #271f308d;
+    background-color: #271f30b6;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -296,6 +296,97 @@ footer a:hover{
     }
     .work-summary p:first-child {
         margin-top: 0;
+    }
+}
+
+
+/* Statement
+-------------------------------------- */
+.statement header::before {
+    background-color: #BC8CC2;
+    background-size: cover;
+    content: "Artist Statement";
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    display: block;
+    height: 150px;
+    text-align: center;
+    color:  #271F30;
+    padding-top: 50px;
+    box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.1);
+}
+.statement-section {
+    margin-bottom: 50px;
+}
+.statement-section h2 {
+    border-bottom: 2px dashed #AD97BF;
+}
+/* .download-link{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+} */
+@media screen and (max-width:1200px){
+    .download-link {
+        position: absolute;
+    }
+}
+@media screen and (max-width:500px){
+    .statement header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+
+
+
+/* cv
+-------------------------------------- */
+.cv header::before {
+    background-color: #BC8CC2;
+    background-size: cover;
+    content: "CV";
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    display: block;
+    height: 150px;
+    text-align: center;
+    color:  #271F30;
+    padding-top: 50px;
+    box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.1);
+}
+.cv-section {
+    margin-bottom: 50px;
+}
+.cv-section h2 {
+    border-bottom: 2px dashed #AD97BF;
+}
+/* .download-link{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+} */
+@media screen and (max-width:1200px){
+    .download-link {
+        position: absolute;
+    }
+}
+@media screen and (max-width:500px){
+    .cv header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
     }
 }
 
