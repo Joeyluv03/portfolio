@@ -17,6 +17,10 @@ html {
     font-size: 62.5%; /* --- set default to 10px --- */
     line-height: 1.4;
   }
+*{
+    margin: 0;
+    padding: 0;
+}
 *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -33,6 +37,58 @@ body {
     color: #280942;
 
 }
+
+/* // nav // */
+nav {
+    background-color: #271F30;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #BC8CC2;
+}
+nav a:hover{
+    background-color: #463957;
+}
+nav li:first-child {
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #271f308d;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
 /* canvas as background */
 canvas {
     background-color: #1e0333cd;
@@ -135,11 +191,16 @@ footer a:hover{
 /* PORTFOLIO
 -------------------------------------- */
 .portfolio header::before {
-    background: url(../images/bg-home-office-studio.jpg) center;
+    background-color: #BC8CC2;
     background-size: cover;
-    content: "";
+    content: "Projects";
     display: block;
-    height: 375px;
+    height: 150px;
+    text-align: center;
+    color:  #271F30;
+    font-size: 30px;
+    padding-top: 50px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .portfolio-section {
     margin-bottom: 50px;
