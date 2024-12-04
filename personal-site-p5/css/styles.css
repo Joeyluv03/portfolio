@@ -60,6 +60,8 @@ nav a{
     display: flex;
     align-items: center;
     color: #BC8CC2;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
 }
 nav a:hover{
     background-color: #463957;
@@ -165,7 +167,6 @@ footer a:hover{
 
 
 
-
 /* HOME
 -------------------------------------- */
 .home {
@@ -180,8 +181,9 @@ footer a:hover{
     flex: 1 0 auto;
 }
 .content-bg {
-    background: rgba(252, 235, 255, 0.472);
+    background: rgba(252, 235, 255, 0.588);
     padding: 30px;
+    margin-top: 100px;
 }
 @media screen and (max-width:650px){
     .home .content-wrapper {
@@ -199,13 +201,14 @@ footer a:hover{
     background-color: #BC8CC2;
     background-size: cover;
     content: "Projects";
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
     display: block;
     height: 150px;
     text-align: center;
     color:  #271F30;
-    font-size: 30px;
     padding-top: 50px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.1);
 }
 .portfolio-section {
     margin-bottom: 50px;
