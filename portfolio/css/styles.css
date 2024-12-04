@@ -160,6 +160,18 @@ footer a:hover{
     line-height: 1;
     border-radius: 4px;
 }
+.btn2 {
+    background:  #271f30af;
+    color: #bcaacb;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 4px;
+}
 
 .content-wrapper {
     margin: 0 auto;
