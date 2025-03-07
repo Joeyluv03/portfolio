@@ -170,11 +170,7 @@ function intro() {
 
 
       push();
-      //
-      //translate(width / 2, height / 2);
-      //fill(240, 110, 160);
-      //textSize(90);
-      //text("My Dress Up", 0, -140);
+     
       translate(-100,50)
       image(title, 0, 0, 800, 450);
 
