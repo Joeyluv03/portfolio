@@ -250,7 +250,7 @@ function scene2() {
       yellowcrew =  loadImage("assets/yellowcrew.png");
       graphic = loadImage("assets/graphicshirt.png");
       pinkbutton = loadImage("assets/pinkbutton.png");
-      raiders = loadImage("assets/raiders.png");
+      raiders = loadImage("assets/raider.png");
       raiderswhite = loadImage("assets/raiderswhite.png");
       silk = loadImage("assets/silkdress.png");
       star = loadImage("assets/stardress.png");
