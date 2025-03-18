@@ -245,7 +245,6 @@ function scene2() {
       offshoulder = loadImage("assets/offshoulder.png");
       pinklong = loadImage("assets/pinklong.png");
       vest = loadImage("assets/vest.png");
-
       blackcrew = loadImage("assets/blackcrew.png");
       blackwhitebutton = loadImage("assets/blackwhitebutton.png");
       yellowcrew =  loadImage("assets/yellowcrew.png");
