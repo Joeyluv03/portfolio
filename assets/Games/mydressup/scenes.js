@@ -233,6 +233,7 @@ function scene2() {
       bun = loadImage("assets/bun.png");
       ponytail = loadImage("assets/ponytail.png");
       beanie = loadImage("assets/beanie.png");
+
       currentImage = loadImage("assets/hairdown.png");
 
       //tops
@@ -244,6 +245,16 @@ function scene2() {
       offshoulder = loadImage("assets/offshoulder.png");
       pinklong = loadImage("assets/pinklong.png");
       vest = loadImage("assets/vest.png");
+      blackcrew = loadImage("assets/black-crew.png");
+      blackwhitebutton = loadImage("assets/black-white-button.png");
+      yellowcrew =  loadImage("assets/yellow-crew.png");
+      graphic = loadImage("assets/graphic-shirt.png");
+      pinkbutton = loadImage("assets/pink-button.png");
+      raiders = loadImage("assets/raiders.png");
+      raiderswhite = loadImage("assets/raiders-white.png");
+      silk = loadImage("assets/silk-dress.png");
+      star = loadImage("assets/star-dress.png");
+
 
       //bottoms
       currentImage3 = loadImage("assets/blackshorts.png");
@@ -254,6 +265,11 @@ function scene2() {
       cargos = loadImage("assets/cargos.png");
       leggings = loadImage("assets/leggings.png");
       skirt = loadImage("assets/skirt.png");
+      darkjorts =  loadImage("assets/dark-jorts.png");
+      lightjort =  loadImage("assets/light-jorts.png");
+      greencargo = loadImage("assets/green-cargos.png");
+      pleatedskirt =  loadImage("assets/pleated-skirt.png");
+
 
       //shoes
       currentImage4 = loadImage("assets/socks.png");
@@ -262,6 +278,8 @@ function scene2() {
       boots = loadImage("assets/boots.png");
       warmers = loadImage("assets/legwarmers.png");
       converse = loadImage("assets/converse.png");
+      forces =  loadImage("assets/forces.png");
+      longboots = loadImage("assets/black-boots-long.png");
 
       switchButton = new Button({
          x: 120, y: 120,
@@ -354,6 +372,24 @@ function scene2() {
                currentImage2 = pinklong;
             } else if (currentImage2 == pinklong) {
                currentImage2 = vest;
+            } else if (currentImage2 == vest) {
+               currentImage2 = blackcrew;
+            } else if (currentImage2 == blackcrew) {
+               currentImage2 = blackwhitebutton;
+            } else if (currentImage2 == blackwhitebutton) {
+               currentImage2 = yellowcrew;
+            } else if (currentImage2 == yellowcrew) {
+               currentImage2 = graphic;
+            } else if (currentImage2 == graphic) {
+               currentImage2 = pinkbutton;
+            } else if (currentImage2 == pinkbutton) {
+               currentImage2 = raiders;
+            } else if (currentImage2 == raiders) {
+               currentImage2 = raiderswhite;
+            } else if (currentImage2 == raiderswhite) {
+               currentImage2 = silk;
+            } else if (currentImage2 == silk) {
+               currentImage2 = star;
             } else {
                currentImage2 = tube;
             };
@@ -407,6 +443,14 @@ function scene2() {
                currentImage3 = leggings;
             } else if (currentImage3 == leggings) {
                currentImage3 = skirt;
+            }  else if (currentImage3 == skirt) {
+               currentImage3 = darkjorts;
+            }  else if (currentImage3 == darkjorts) {
+               currentImage3 = lightjort;
+            }  else if (currentImage3 == lightjort) {
+               currentImage3 = pleatedskirt;
+            }  else if (currentImage3 == pleatedskirt) {
+               currentImage3 = greencargo;
             } else {
                currentImage3 = shorts;
             };
@@ -456,6 +500,10 @@ function scene2() {
                currentImage4 = warmers;
             } else if (currentImage4 == warmers) {
                currentImage4 = converse;
+            } else if (currentImage4 == converse) {
+               currentImage4 = forces;
+            } else if (currentImage4 == forces) {
+               currentImage4 = longboots;
             } else {
                currentImage4 = socks;
             };
@@ -566,7 +614,7 @@ function scene2() {
 
          style_pressed: {
             color: '#fff',
-            background: '#ffcea6',
+            background: '#ffccf0',
             text_size: 20,
             text_font: loadFont('assets/heart-font.ttf'),
             border_width: 2,
@@ -579,7 +627,6 @@ function scene2() {
 
             if (typeof window.print === "function") {
                window.print();
-
                // Set a timeout to reload the page after printing dialog is triggered
                setTimeout(function () {
                   location.reload(); // Refresh the page
@@ -788,10 +835,10 @@ function info() {
       //
       translate(100, 80);
       fill(240, 110, 160);
-      textSize(18);
-      text("For my final project, I would like to create a dress up game \nbased on myself. Get a glimpse of my closet and help me \nchoose what to wear.", 200, 100);
-      text("This project can be updated continuously if \nI want to add more outfit varieties.", 200, 200);
-      text("In this project, I utilized the button library to \nchange each element of my outfits as well as changing\n the scenes. I utilized the sound library by \nadding background music play throughout the game. \nAdditionally, I added clicking noises when a \nbutton is pressed.", 200, 320)
+      textSize(15);
+      text("Fashion is more than threads and fabric.\n It can be a language, a reflection of self identity, and a powerful\n form of expression. The way we dress can influence our feelings\n but also the way others perceive us. We can communicate to others\n aspects of our personalities or even emotions without a word.  It becomes unspoken dialogue,\n  shaping the ways we connect with others in the world around us. Fashion\n is often the first thing that people notice about you,\n influencing their judgement about who we are as people.", 200, 150);
+      text("My Dress Up is a hand-drawn javascript game that invites players\n to a space of creativity through the use of my personal closet. This interactive experience\n encourages players to use their judgement and dictate what they believe I should wear.\n What looks the best? What looks the worst? Fashion is subjective. This\n game explores the balance between personal style and social perception\n as players help me decide what to wear - curating \ntheir own identity into the outfits they choose for me.", 200, 305);
+      text("My Dress Up is more than a game,\n it is an open conversation about self-expression, identity,\n and the transformative powers of fashion.", 200, 425)
 
       pop();
 
