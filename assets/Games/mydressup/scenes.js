@@ -265,10 +265,10 @@ function scene2() {
       cargos = loadImage("assets/cargos.png");
       leggings = loadImage("assets/leggings.png");
       skirt = loadImage("assets/skirt.png");
-      darkjorts =  loadImage("assets/darkjorts.png");
-      lightjort =  loadImage("assets/lightjorts.png");
+      darkjorts = loadImage("assets/darkjorts.png");
+      lightjort = loadImage("assets/lightjorts.png");
       greencargo = loadImage("assets/greencargos.png");
-      pleatedskirt =  loadImage("assets/pleatedskirt.png");
+      pleatedskirt = loadImage("assets/pleatedskirt.png");
 
 
       //shoes
@@ -278,7 +278,7 @@ function scene2() {
       boots = loadImage("assets/boots.png");
       warmers = loadImage("assets/legwarmers.png");
       converse = loadImage("assets/converse.png");
-      forces =  loadImage("assets/forces.png");
+      forces = loadImage("assets/forces.png");
       longboots = loadImage("assets/blackbootslong.png");
 
       switchButton = new Button({
