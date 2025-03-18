@@ -245,15 +245,16 @@ function scene2() {
       offshoulder = loadImage("assets/offshoulder.png");
       pinklong = loadImage("assets/pinklong.png");
       vest = loadImage("assets/vest.png");
-      blackcrew = loadImage("assets/black-crew.png");
-      blackwhitebutton = loadImage("assets/black-white-button.png");
-      yellowcrew =  loadImage("assets/yellow-crew.png");
-      graphic = loadImage("assets/graphic-shirt.png");
-      pinkbutton = loadImage("assets/pink-button.png");
+
+      blackcrew = loadImage("assets/blackcrew.png");
+      blackwhitebutton = loadImage("assets/blackwhitebutton.png");
+      yellowcrew =  loadImage("assets/yellowcrew.png");
+      graphic = loadImage("assets/graphicshirt.png");
+      pinkbutton = loadImage("assets/pinkbutton.png");
       raiders = loadImage("assets/raiders.png");
-      raiderswhite = loadImage("assets/raiders-white.png");
-      silk = loadImage("assets/silk-dress.png");
-      star = loadImage("assets/star-dress.png");
+      raiderswhite = loadImage("assets/raiderswhite.png");
+      silk = loadImage("assets/silkdress.png");
+      star = loadImage("assets/stardress.png");
 
 
       //bottoms
@@ -265,10 +266,10 @@ function scene2() {
       cargos = loadImage("assets/cargos.png");
       leggings = loadImage("assets/leggings.png");
       skirt = loadImage("assets/skirt.png");
-      darkjorts =  loadImage("assets/dark-jorts.png");
-      lightjort =  loadImage("assets/light-jorts.png");
-      greencargo = loadImage("assets/green-cargos.png");
-      pleatedskirt =  loadImage("assets/pleated-skirt.png");
+      darkjorts =  loadImage("assets/darkjorts.png");
+      lightjort =  loadImage("assets/lightjorts.png");
+      greencargo = loadImage("assets/greencargos.png");
+      pleatedskirt =  loadImage("assets/pleatedskirt.png");
 
 
       //shoes
@@ -279,7 +280,7 @@ function scene2() {
       warmers = loadImage("assets/legwarmers.png");
       converse = loadImage("assets/converse.png");
       forces =  loadImage("assets/forces.png");
-      longboots = loadImage("assets/black-boots-long.png");
+      longboots = loadImage("assets/blackbootslong.png");
 
       switchButton = new Button({
          x: 120, y: 120,
